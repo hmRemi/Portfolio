@@ -23,7 +23,7 @@ function Home() {
                   {useTypedText("I'm ziue.", 50, 1300)}
                 </h1>
                 <br />
-                {useTypedText("I'm a Software Developer from Norway.", 30, 1500)}
+                {useTypedText("I'm a Developer from Norway.", 30, 1500)}
 
               </div>
 
