@@ -28,7 +28,7 @@ function ResumeNew() {
 
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px", boxShadow: "0 0 25px #623686" }}
+            style={{ maxWidth: "250px", boxShadow: "0 0 25px #623686", fontFamily: 'Alfa Slab One' }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
@@ -46,7 +46,7 @@ function ResumeNew() {
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px", boxShadow: "0 0 25px #623686" }}
+            style={{ maxWidth: "250px", boxShadow: "0 0 25px #623686", fontFamily: 'Alfa Slab One' }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV

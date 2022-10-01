@@ -297,6 +297,7 @@ button:focus {
   background-image: linear-gradient(60deg, #871eff, #1a07183a);
   border-radius: 12px;
   box-shadow: -0.5rem 0.5rem 15px #871eff;
+  font-family: 'Alfa Slab One', cursive;
   /*color: #2c6fff; /*#cd5ff8;*/
 }
 
@@ -356,6 +357,7 @@ button:focus {
   text-align: center !important;
   padding-top: 25px;
   color: white !important;
+  font-family: 'Alfa Slab One', cursive;
 }
 
 .home-about-social-links {
@@ -367,6 +369,7 @@ button:focus {
 }
 
 .home-social-icons {
+  font-family: 'Alfa Slab One', cursive;
   position: relative !important;
   display: inline-block !important;
   width: 40px !important;
@@ -468,6 +471,7 @@ button:focus {
 }
 
 .project-card {
+  font-family: 'Alfa Slab One', cursive;
   padding-top: 50px !important;
   padding-bottom: 50px !important;
   padding-left: 25px !important;
@@ -551,6 +555,7 @@ button:focus {
   box-shadow: none !important;
 }
 .project-heading {
+  font-family: 'Alfa Slab One', cursive;
   color: white !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
@@ -562,6 +567,7 @@ button:focus {
 /* --------- */
 
 .about-section {
+  font-family: 'Alfa Slab One', cursive;
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
