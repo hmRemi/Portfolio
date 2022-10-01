@@ -28,7 +28,6 @@ function NavBar() {
 
   return (
     <Navbar
-      expanded={expand}
       fixed="top"
       expand="md"
       className={navColour ? "sticky" : "navbar"}
@@ -46,6 +45,7 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
+
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
@@ -92,6 +92,24 @@ function NavBar() {
                 rel="noreferrer"
               >
                 <ImYoutube style={{ marginBottom: "2px" }} /> YouTube
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link>
+         
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link>
+         
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link>
+         
               </Nav.Link>
             </Nav.Item>
           </Nav>

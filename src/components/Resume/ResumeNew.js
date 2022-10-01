@@ -25,9 +25,10 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
+
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "250px", boxShadow: "0 0 25px #623686" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
@@ -45,7 +46,7 @@ function ResumeNew() {
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "250px", boxShadow: "0 0 25px #623686" }}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
