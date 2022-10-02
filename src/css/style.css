@@ -108,7 +108,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #2c6fff !important;
+  background-color: #871eff !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -275,6 +275,8 @@ button:focus {
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
+  transition: all 0.5s ease 0s !important;
+
 }
 
 .home-content {
@@ -481,7 +483,6 @@ button:focus {
 
 .project-card-view {
   box-shadow: 1px 1px 1px 5px #871eff !important;
-
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
