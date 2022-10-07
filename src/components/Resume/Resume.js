@@ -8,9 +8,13 @@ function Resume() {
 
         <Container fluid className="about-section">
             <AnimatedTransition>
-
                 <Particle />
                 <Container>
+
+                    {/* 
+                        Personal Information Row
+                    */}
+
                     <Row style={{ justifyContent: "center", padding: "10px" }}>
                         <Col
                             md={7}
@@ -20,10 +24,10 @@ function Resume() {
                                 paddingBottom: "50px",
                             }}
                         >
-
                             <h1 style={{ fontSize: "2.1em", paddingTop: "120px" }}>
                                 <strong className="purple">PERSONAL</strong> INFORMATION
                             </h1>
+
                             <hr></hr>
 
                             <p style={{ textAlign: "justify" }}>
@@ -37,13 +41,18 @@ function Resume() {
                                 • Discord: ziue#6993<br></br>
                             </p>
                             <hr style={{ marginBottom: "327px" }}></hr>
-
                         </Col>
-
                     </Row>
 
-                    <Row>
+                    {/* 
+                        Row that contains the information about the resume.
+                    */}
 
+                    <Row>
+                        {/* 
+                            Work Column
+                        */}
+                        
                         <Col md={6}>
                             <h1 style={{ fontSize: "2.1em" }}>
                                 <strong className="purple">WORK</strong>
@@ -62,6 +71,10 @@ function Resume() {
                             </p>
                             <hr style={{ marginBottom: "160px" }}></hr>
                         </Col>
+
+                        {/* 
+                            Skills Column
+                        */}
 
                         <Col md={6}>
                             <h1 style={{ fontSize: "2.1em" }}>
@@ -85,6 +98,10 @@ function Resume() {
                             <hr style={{ marginBottom: "160px" }}></hr>
                         </Col>
 
+                        {/* 
+                            Education Column
+                        */}
+
                         <Col md={6}>
                             <h1 style={{ fontSize: "2.1em" }}>
                                 <strong className="purple">EDUCATION</strong>
@@ -97,6 +114,10 @@ function Resume() {
                             </p>
                             <hr style={{ marginBottom: "160px" }}></hr>
                         </Col>
+
+                        {/* 
+                            Languages Column
+                        */}
 
                         <Col md={6}>
                             <h1 style={{ fontSize: "2.1em" }}>
@@ -119,7 +140,6 @@ function Resume() {
                 </Container>
             </AnimatedTransition>
         </Container>
-
     );
 }
 
