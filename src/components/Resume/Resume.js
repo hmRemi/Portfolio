@@ -87,10 +87,10 @@ function Resume() {
                             </p>
                             <p style={{ textAlign: "justify" }}>
                                 • Software Proficiency <br></br>
+                                • Node.JS/React.JS <br></br>
                                 • Problem-Solving <br></br>
                                 • HTML & CSS <br></br>
                                 • JavaScript <br></br>
-                                • Node.JS/React.JS <br></br>
                                 • Python <br></br>
                                 • Java <br></br>
                                 • C#

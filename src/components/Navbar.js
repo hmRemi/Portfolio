@@ -1,17 +1,11 @@
 import React, { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import { Link } from "react-router-dom";
-import { ImYoutube } from "react-icons/im";
-import {
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
-
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { AiOutlineFundProjectionScreen, AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
-import AnimatedTransition from "../utils/AnimatedTransition";
+import { ImYoutube } from "react-icons/im";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);

@@ -1,20 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+
 import Preloader from "../src/components/Pre";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
+import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useLocation,
-} from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import "./css/style.css";
+
 import "./css/app.css";
+import "./css/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
