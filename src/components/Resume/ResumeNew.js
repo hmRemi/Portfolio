@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
-import ProjectCard from "../Projects/ProjectCards";
-import pdf from "../../assets/resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+
+import pdf from "../../assets/resume.pdf";
 import AnimatedTransition from "../../utils/AnimatedTransition";
+import Particle from "../Particle";
+
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =

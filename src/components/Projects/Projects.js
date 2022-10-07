@@ -1,9 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
+import { Col, Container, Row } from "react-bootstrap";
+
 import luma from "../../assets/Projects/luma.png";
 import AnimatedTransition from "../../utils/AnimatedTransition";
+import Particle from "../Particle";
+import ProjectCard from "./ProjectCards";
 
 function Projects() {
   return (

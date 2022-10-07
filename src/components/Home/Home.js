@@ -1,13 +1,9 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
-import { useTypedText } from '../../utils/textTyper.tsx';
-import Home2 from "./Home2";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-} from "react-icons/ai";
+import { Col, Container, Row } from "react-bootstrap";
+
 import AnimatedTransition from "../../utils/AnimatedTransition";
+import { useTypedText } from '../../utils/textTyper.tsx';
+import Particle from "../Particle";
 
 function Home() {
   return (
