@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import AnimatedTransition from "../../utils/AnimatedTransition";
 
-function About() {
+function Resume() {
     return (
 
         <Container fluid className="about-section">
@@ -123,4 +123,4 @@ function About() {
     );
 }
 
-export default About;
+export default Resume;
