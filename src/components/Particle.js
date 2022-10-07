@@ -10,10 +10,6 @@ function Particle() {
           events: {
             onClick: {
               enable: true,
-              mode: "push",
-            },
-            onHover: {
-              enable: true,
               mode: "repulse",
             },
             resize: true,
@@ -23,7 +19,7 @@ function Particle() {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 400,
               duration: 0.4,
             },
           },
@@ -35,22 +31,22 @@ function Particle() {
           move: {
             enable: true,
             random: true,
-            speed: 6,
-            straight: false,
+            speed: 10,
+            straight: true,
           },
           number: {
             density: {
               enable: true,
               area: 1000,
             },
-            value: 80,
+            value: 30,
           },
           opacity: {
             value: 0.5,
           },
 
           size: {
-            value: { min: 1, max: 5 },
+            value: { min: 1, max: 2 },
           },
         },
         detectRetina: true,

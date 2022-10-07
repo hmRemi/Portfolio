@@ -22,7 +22,7 @@ function AboutCard() {
             <li className="about-activity">
               <ImPointRight /> Listening to Music
             </li>
-           
+
           </ul>
         </blockquote>
       </Card.Body>

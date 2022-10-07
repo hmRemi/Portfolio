@@ -6,7 +6,10 @@ import { BsGithub } from "react-icons/bs";
 
 function ProjectCards(props) {
   return (
+    <div className="project-card-view-animation">
     <Card className="project-card-view">
+      <span>
+    
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
@@ -19,7 +22,6 @@ function ProjectCards(props) {
         </Button>
         {"\n"}
         {"\n"}
-
         {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 
         {!props.isBlog && props.demoLink && (
@@ -34,7 +36,9 @@ function ProjectCards(props) {
           </Button>
         )}
       </Card.Body>
+      </span>
     </Card>
+    </div>
   );
 }
 export default ProjectCards;

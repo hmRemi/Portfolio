@@ -11,6 +11,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import AnimatedTransition from "../utils/AnimatedTransition";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);

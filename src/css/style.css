@@ -1,15 +1,11 @@
 html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
+  --section-background-color: linear-gradient(to bottom left,
+      rgba(17, 16, 16, 0.582),
+      rgba(12, 8, 24, 0.904));
 
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0),
-    rgba(12, 10, 22, 0.9)
-  );
+  --image-gradient: linear-gradient(to bottom left,
+      rgba(17, 16, 16, 0),
+      rgba(12, 10, 22, 0.9));
 
   --imp-text-color: #c770f0;
   --blue-text-color: #2c6fff;
@@ -157,10 +153,12 @@ button:focus {
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
   }
+
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
+
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
@@ -172,8 +170,8 @@ button:focus {
 
 .navbar-nav .nav-link {
   color: white !important;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
+  padding-right: 2rem !important;
+  padding-left: 0rem !important;
 }
 
 .nav-link {
@@ -189,7 +187,6 @@ button:focus {
 .navbar-nav .nav-item {
   position: relative;
   margin-left: 50px;
-
 }
 
 .navbar-nav .nav-item a {
@@ -221,10 +218,14 @@ button:focus {
 /* Home section */
 /* --------- */
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.1s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 
@@ -232,28 +233,38 @@ button:focus {
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
   20% {
     transform: rotate(-8deg);
   }
+
   30% {
     transform: rotate(14deg);
   }
+
   40% {
     transform: rotate(-4deg);
   }
+
   50% {
     transform: rotate(10deg);
   }
+
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  }
+
+  /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
   }
 }
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -296,18 +307,70 @@ button:focus {
 }
 
 .main-name {
-  background-image: linear-gradient(60deg, #871eff, #1a07183a);
-  border-radius: 12px;
-  box-shadow: -0.5rem 0.5rem 15px #871eff;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.main-name::before {
+  content: '';
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  background-image: conic-gradient(transparent, transparent, transparent, #871eff);
+  transform-origin: left top;
+  animation: animate 4s linear infinite;
+}
+
+.main-name::after {
+  content: '';
+  position: absolute;
+  width: 1000px;
+  height: 1000px;
+  background-image: conic-gradient(transparent, transparent, transparent, #871eff);
+  transform-origin: left top;
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+.main-name span {
+  position: absolute;
+  inset: 5px;
+  border-radius: 16px;
+  background-image: url(./../assets/bg2.png);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.main-name h1 {
+  margin-top: 120px;
+  color: #fff;
   font-family: 'Alfa Slab One', cursive;
-  /*color: #2c6fff; /*#cd5ff8;*/
+  font-size: 2.5em;
+}
+
+.main-name p {
+  color: #fff;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #871eff !important; /*#be6adf*/
+  color: #871eff !important;
+  /*#be6adf*/
   font-weight: 600 !important;
 }
+
 .Typewriter__cursor {
   font-size: 2.4em !important;
   color: #871eff !important;
@@ -319,6 +382,7 @@ button:focus {
     font-weight: 500 !important;
     position: absolute !important;
   }
+
   .Typewriter__cursor {
     display: none !important;
   }
@@ -347,12 +411,14 @@ button:focus {
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
+  color: white;
 }
 
 .home-about-body {
   padding-top: 50px;
   font-size: 1.2em !important;
   text-align: left;
+  color: white;
 }
 
 .home-about-social {
@@ -423,11 +489,12 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: #27272710;
+  background: #10101099;
   bottom: 0 !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 10px !important;
 }
+
 .footer-copywright {
   text-align: center !important;
 }
@@ -453,6 +520,7 @@ button:focus {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
+
 .footer-icons {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
@@ -462,6 +530,7 @@ button:focus {
 .blockquote-footer {
   color: #8400ff !important;
 }
+
 /* --------- */
 /* Projects */
 /* --------- */
@@ -482,19 +551,60 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 1px 1px 1px 5px #871eff !important;
   color: white !important;
   background-color: transparent !important;
-  opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
-
 }
 
 .project-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: -0.5rem 0.5rem 15px #871eff;
+  transform: scale(1.05) !important;
+}
+
+.project-card-view-animation {
+  position: relative;
+  background: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  height: 100% !important;
+}
+
+.project-card-view-animation:before,
+.project-card-view-animation:after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  background-image: conic-gradient(#c770f0, #621eff, #c770f0, #621eff);
+  background-size: 400%;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 200% 0;
+  }
+
+  20% {
+    background-position: 0 0;
+  }
+  40% {
+    background-position: 200% 0;
+  }
+  60% {
+    background-position: 0 0;
+  }
+  80% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.project-card-view-animation:after {
+  filter: blur(20px);
 }
 
 .blog-card {
@@ -551,10 +661,12 @@ button:focus {
   background-color: #6d20c5d7 !important;
   border-color: #6d20c5d7 !important;
 }
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
 .project-heading {
   font-family: 'Alfa Slab One', cursive;
   color: white !important;
@@ -576,16 +688,34 @@ button:focus {
   color: white !important;
 }
 
+.tech-icons-animation {
+  position: relative;
+  background: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  height: 100% !important;
+}
+
+.tech-icons-animation:before,
+.tech-icons-animation:after {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  background-image: conic-gradient(#c770f0, #621eff, #c770f0, #621eff);
+  background-size: 400%;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 8px;
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
 .tech-icons {
   font-size: 4.5em !important;
   margin: 10px !important;
-  padding-bottom: 15px !important;
+  padding: 20px !important;
   opacity: 0.93 !important;
-  background-image: linear-gradient(60deg, #871eff, #1a07183a);
   vertical-align: middle !important;
   text-align: center !important;
-  box-shadow: 0 0 5px #871eff;
-  border-radius: 20px !important;
   transition: all 0.4s ease 0s !important;
 }
 
@@ -597,10 +727,10 @@ button:focus {
 
 .tech-icons:hover {
   transform: scale(1.05) !important;
-  overflow: hidden !important;
 }
+
 .tech-icon-images {
-  padding: 20px !important;
+  padding-bottom: 15px !important;
   line-height: 1.6 !important;
 }
 
@@ -608,6 +738,13 @@ button:focus {
   border: none !important;
   color: white !important;
   background-color: transparent !important;
+  transition: all 0.4s ease 0s !important;
+
+}
+
+.quote-card-view:hover  {
+  transform: scale(1.05) !important;
+  overflow: hidden !important;
 }
 
 .about-activity {
@@ -621,6 +758,7 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
 /* --------- */
 /* Resume */
 /* --------- */
@@ -658,6 +796,7 @@ button:focus {
     padding-left: 15px !important;
   }
 }
+
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;
@@ -734,10 +873,12 @@ button:focus {
   animation-fill-mode: forwards;
   animation-duration: 0.85s;
 }
+
 @keyframes likeAnimation {
   0% {
     transform: scale(1.5);
   }
+
   100% {
     transform: scale(1);
   }
@@ -761,6 +902,7 @@ button:focus {
   background-color: #a24dd386 !important;
   border-color: #a24dd386 !important;
 }
+
 .fork-btn-inner::after {
   display: none !important;
 }

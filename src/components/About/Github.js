@@ -8,13 +8,14 @@ function Github() {
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
         Days I <strong className="purple">Code</strong>
       </h1>
-      <GitHubCalendar
-        username="ziuee"
-        blockSize={15}
-        blockMargin={5}
-        color="#871eff"
-        fontSize={16}
-      />
+
+        <GitHubCalendar
+          username="ziuee"
+          blockSize={15}
+          blockMargin={5}
+          color="#871eff"
+          fontSize={16}
+        />
     </Row>
   );
 }
