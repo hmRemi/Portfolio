@@ -203,8 +203,8 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background-image: linear-gradient(60deg, #871eff, #500d4950);
-  bottom: 1px;
+  background-image: linear-gradient(60deg, #871eff, #5612a3);
+  bottom: 10;
   left: 0;
   z-index: -1;
   transition: all 0.3s ease-out 0s;
@@ -312,11 +312,15 @@ button:focus {
   overflow: hidden;
 }
 
+.main-name:hover {
+  font-size: 28px;
+}
+
 .main-name::before {
   content: '';
   position: absolute;
-  width: 1000px;
-  height: 1000px;
+  width: 500px;
+  height: 500px;
   background-image: conic-gradient(transparent, transparent, transparent, #871eff);
   transform-origin: left top;
   animation: animate 4s linear infinite;
@@ -325,8 +329,8 @@ button:focus {
 .main-name::after {
   content: '';
   position: absolute;
-  width: 1000px;
-  height: 1000px;
+  width: 500px;
+  height: 500px;
   background-image: conic-gradient(transparent, transparent, transparent, #871eff);
   transform-origin: left top;
   animation: animate 4s linear infinite;
@@ -491,8 +495,8 @@ button:focus {
 .footer {
   background: #10101099;
   bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-top: 15px !important;
+  padding-bottom: 13px !important;
 }
 
 .footer-copywright {
@@ -538,7 +542,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  /*background-image: var(--section-background-color) !important;*/
 }
 
 .project-card {

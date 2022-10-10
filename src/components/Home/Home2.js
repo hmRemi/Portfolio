@@ -1,8 +1,8 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../assets/avatar.svg";
-import Tilt from "react-parallax-tilt";
+import { Col, Container, Row } from "react-bootstrap";
 
+import React from "react";
+import Tilt from "react-parallax-tilt";
+import myImg from "../../assets/avatar.svg";
 
 function Home2() {
   return (
